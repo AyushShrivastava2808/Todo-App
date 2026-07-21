@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:40px 20px;
+}
+
+#main-heading{
+    margin-bottom:30px;
+    font-size:42px;
+    font-weight:700;
+}
+
+.input-container{
+    width:700px;
+    display:grid;
+    grid-template-columns:2fr 1.2fr 110px;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+input{
+    height:48px;
+    padding:0 12px;
+    border:1px solid #cfcfcf;
+    border-radius:4px;
+    font-size:15px;
+}
+
+input:focus{
+    outline:none;
+    border-color:#007bff;
+}
+
+.add-btn{
+    background:#0b7a22;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.add-btn:hover{
+    background:#08661c;
+}
+
+.todo-container{
+    width:700px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.todo-container div{
+    display:grid;
+    grid-template-columns:2fr 1.2fr 110px;
+    gap:15px;
+    align-items:center;
+
+    background:white;
+
+    padding:14px;
+
+    border-radius:6px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.todo-container span:first-child{
+    font-size:17px;
+    font-weight:600;
+}
+
+.todo-container span:nth-child(2){
+    font-size:16px;
+}
+
+.todo-container button{
+    height:42px;
+    background:#a10000;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+    transition:.2s;
+}
+
+.todo-container button:hover{
+    background:#7d0000;
+}
+
+@media(max-width:750px){
+
+    .input-container,
+    .todo-container{
+        width:100%;
+    }
+
+    .input-container{
+        grid-template-columns:1fr;
+    }
+
+    .todo-container div{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .todo-container button{
+        width:100%;
+    }
+}
+
+#todo-btn{
+    background-color: green;
+    border-radius: 6px;
+    border: none;
+}
